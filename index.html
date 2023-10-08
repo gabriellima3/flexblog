@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Flex00Blog</title>
   </head>
   <body>
@@ -29,14 +29,12 @@
         <div class="menu-logo">
           <a href="#">FlexBlog</a>
         </div>
-        <nav>
+        <nav class="menu-nav">
           <ul>
-            <li>
-              <a href="#sobre">Sobre</a>
-              <a href="#produtos">Produtos</a>
-              <a href="#preco">Preço</a>
-              <a href="#qualidade">qualidade</a>
-            </li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#preco">Preço</a></li>
+            <li><a href="#qualidade">Qualidade</a></li>
           </ul>
         </nav>
       </div>
@@ -66,7 +64,7 @@
       </div>
     </section>
 
-    <sectionv class="produtos" id="produtos">
+    <section class="produtos" id="produtos">
       <h1>Produtos</h1>
       <div class="produtos-container">
         <div class="produtos-item purple">
@@ -74,15 +72,15 @@
           <img src="img/produtos1.jpg" alt="Produtos 1" />
         </div>
         <div class="produtos-item pink">
-          <h2>Purple</h2>
+          <h2>Pink</h2>
           <img src="img/produtos2.jpg" alt="Produtos 2" />
         </div>
         <div class="produtos-item blue">
-          <h2>Purple</h2>
+          <h2>Blue</h2>
           <img src="img/produtos3.jpg" alt="Produtos 3" />
         </div>
       </div>
-    </sectionv>
+    </section>
 
     <section class="preco" id="preco">
       <div class="preco-item">
@@ -182,7 +180,7 @@
         <p>assine e fique por dentro das novidades</p>
       </div>
 
-      <form>
+      <form class="newsletter-form">
         <input type="text" placeholder="Seu e-mail" />
         <button type="submit">Assinar</button>
       </form>
